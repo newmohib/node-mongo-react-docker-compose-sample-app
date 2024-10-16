@@ -4,11 +4,13 @@ Start with Docker Compose
     docker-compose -f docker-compose.yaml up
 Stop with Docker Compose
     docker-compose -f docker-compose.yaml down
-
+Build Image
+    docker build -t my-app:1.0.0 ./app
+    
 ## demo app - developing with Docker
 
 This demo app shows a simple user profile app set up using
-
+ 
 - index.html with pure js and css styles
 - nodejs backend with express module
 - mongodb for data storage
