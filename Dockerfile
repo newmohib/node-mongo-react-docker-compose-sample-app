@@ -1,7 +1,7 @@
 FROM node:20-alpine
 
-ENV MONGO_DB_USERNAME=admin \
-    MONGO_DB_PWD=admin
+ENV ME_CONFIG_MONGODB_ADMINUSERNAME=admin \
+    ME_CONFIG_MONGODB_ADMINPASSWORD=admin
 
 RUN mkdir -p /home/app
 
