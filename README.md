@@ -1,9 +1,9 @@
 ### start and stop docker compose
 
 Start with Docker Compose
-docker-compose -f docker-compose.yaml up
+    docker-compose -f docker-compose.yaml up
 Stop with Docker Compose
-docker-compose -f docker-compose.yaml down
+    docker-compose -f docker-compose.yaml down
 
 ## demo app - developing with Docker
 
