@@ -26,7 +26,9 @@ services:
     depends_on:
       - "mongodb"
   ui-service:
-    build: ./app
+    build:
+      context: ./app # The build context
+      dockerfile: ../Dockerfile # Relative path to the Dockerfile from the build context
     volumes:
       - ./user/src/app
     restart: always
