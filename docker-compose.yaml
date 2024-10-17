@@ -26,15 +26,12 @@ services:
     depends_on:
       - "mongodb"
   ui-service:
-    image: ui-service # This explicitly sets the image name to "ui-service"
-    build:
-      context: ./app # The build context
-      dockerfile: ../Dockerfile # Relative path to the Dockerfile from the build context
+    image: 850995562911.dkr.ecr.us-east-1.amazonaws.com/ui-service:latest
+    ports:
+      - 3000:3000
     volumes:
       - ./home/app
     restart: always
-    ports:
-      - 3000:3000
     depends_on:
       - "mongodb"
 volumes:
