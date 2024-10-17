@@ -6,6 +6,10 @@ Stop with Docker Compose
     docker-compose -f docker-compose.yaml down
 Build Image
     docker build -t my-app:1.0.0 ./app
+for dev-private-repo
+    login with awc cli like
+        aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 888584.dkr.ecr.region.amazonaws.com
+    docker-compose -f docker-compose.yaml up
     
 ## demo app - developing with Docker
 
